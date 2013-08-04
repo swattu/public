@@ -1,0 +1,21 @@
+<project default="jar" basedir=".">
+	<target name="jar" depends="clean,compile">
+		<mkdir dir="dist" />
+		<jar destfile="dist/swat-util.jar">
+			<fileset dir="bin/.">
+			</fileset>
+		</jar>
+	</target>
+	<target name="compile">
+		<mkdir dir="bin" />
+		<javac destdir="bin" srcdir="src">
+			<classpath>
+				<fileset dir="lib" includes="*.jar" />
+			</classpath>
+		</javac>
+	</target>
+	<target name="clean">
+		<delete dir="bin" />
+		<delete dir="dist" />
+	</target>
+</project>
