@@ -2334,6 +2334,16 @@ public final class ResultSetWrapper implements ResultSet {
         rst.updateNClob(columnLabel, reader);
     }
 
+    @Override
+    public <T> T getObject(int i, Class<T> aClass) throws SQLException {
+        return rst.getObject(i, aClass);
+    }
+
+    @Override
+    public <T> T getObject(String s, Class<T> aClass) throws SQLException {
+        return rst.getObject(s, aClass);
+    }
+
     public void updateNClob(int columnIndex, Reader reader, long length)
             throws SQLException {
         rst.updateNClob(columnIndex, reader, length);
