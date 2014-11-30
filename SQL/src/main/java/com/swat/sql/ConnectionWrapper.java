@@ -19,6 +19,7 @@ import java.sql.Savepoint;
 import java.sql.Statement;
 import java.sql.Struct;
 import java.util.Properties;
+import java.util.concurrent.Executor;
 
 import com.swat.util.XPropUtil;
 
@@ -677,6 +678,31 @@ public class ConnectionWrapper implements Connection {
   @Override
   public Struct createStruct(String typeName, Object[] attributes) throws SQLException {
     return con.createStruct(typeName, attributes);
+  }
+
+  @Override
+  public void setSchema(String s) throws SQLException {
+    con.setSchema(s);
+  }
+
+  @Override
+  public String getSchema() throws SQLException {
+    return con.getSchema();
+  }
+
+  @Override
+  public void abort(Executor executor) throws SQLException {
+    con.abort(executor);
+  }
+
+  @Override
+  public void setNetworkTimeout(Executor executor, int i) throws SQLException {
+    con.setNetworkTimeout(executor,i);
+  }
+
+  @Override
+  public int getNetworkTimeout() throws SQLException {
+    return con.getNetworkTimeout();
   }
 
   @Override
