@@ -1,5 +1,7 @@
 package com.swat.sql;
 
+import org.apache.log4j.Logger;
+
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
@@ -10,8 +12,6 @@ import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
-
-import org.apache.log4j.Logger;
 
 //This class is not Thread Safe.
 

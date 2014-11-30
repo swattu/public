@@ -1,5 +1,9 @@
 package com.swat.sql;
 
+import com.swat.util.DateType;
+import com.swat.util.FileUtil;
+import com.swat.util.MailSender;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.sql.Connection;
@@ -9,10 +13,6 @@ import java.util.Date;
 import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.StringTokenizer;
-
-import com.swat.util.DateType;
-import com.swat.util.FileUtil;
-import com.swat.util.MailSender;
 
 /**
  * The Utility class to keep track of the Open Resources and Cascade Close them.

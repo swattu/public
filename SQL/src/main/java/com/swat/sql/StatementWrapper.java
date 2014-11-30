@@ -1,5 +1,7 @@
 package com.swat.sql;
 
+import com.swat.util.XPropUtil;
+
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -7,8 +9,6 @@ import java.sql.SQLWarning;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
-
-import com.swat.util.XPropUtil;
 
 /**
  * The Wrapper for the Statement

@@ -6,10 +6,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import com.swat.sql.ConnectionWrapper;
-import com.swat.sql.QueryLogger;
-import com.swat.sql.SQLUtils;
-
 public class OracleUtils extends SQLUtils {
     public static void main(String[] args) throws SQLException {
         Connection con = new OracleUtils(false).getConnection();

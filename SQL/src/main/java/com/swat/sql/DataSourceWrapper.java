@@ -1,14 +1,13 @@
 package com.swat.sql;
 
+import com.swat.util.XPropUtil;
+
+import javax.sql.DataSource;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.SQLFeatureNotSupportedException;
 import java.util.logging.Logger;
-
-import javax.sql.DataSource;
-
-import com.swat.util.XPropUtil;
 
 public class DataSourceWrapper implements DataSource {
     private final DataSource dataSource;

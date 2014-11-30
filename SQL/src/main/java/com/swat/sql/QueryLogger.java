@@ -1,14 +1,14 @@
 package com.swat.sql;
 
+import com.swat.util.DateType;
+import com.swat.util.FileUtil;
+import com.swat.util.XPropUtil;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
-import com.swat.util.DateType;
-import com.swat.util.FileUtil;
-import com.swat.util.XPropUtil;
 
 /**
  * Utility to log the Queries fired

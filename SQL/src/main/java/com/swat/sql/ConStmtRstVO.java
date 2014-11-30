@@ -1,6 +1,9 @@
 package com.swat.sql;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 /**
  * Information about the critical resources i.e. Connection,Statement and
