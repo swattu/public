@@ -746,6 +746,16 @@ public class StatementWrapper implements Statement {
         return stmt.isPoolable();
     }
 
+    @Override
+    public void closeOnCompletion() throws SQLException {
+        stmt.closeOnCompletion();
+    }
+
+    @Override
+    public boolean isCloseOnCompletion() throws SQLException {
+        return stmt.isCloseOnCompletion();
+    }
+
     public void setPoolable(boolean poolable) throws SQLException {
         stmt.setPoolable(poolable);
     }
